@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="en">
+    <meta name="viewport" content="width=device-width">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill your details in this form.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+      <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required></label>
+      <label for="number" id="number-label">Age (required) <input type="number" id="number" min="18" max="60" placeholder="Enter your age" required></label>
+      <label for="dropdown">Which option describe your current role?
+        <select id="dropdown" name=
+        "role">
+          <option value="" disabled selected>Select an option</option>
+          <option value="student">Student</option>
+          <option value="job">Full time job</option>
+          <option value="learner">Full time learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+      <label><input type="radio" name="recommend" value="definitely"> Definitely</label>
+      <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+      <label><input type="radio" name="recommend" value="notSure"> Not sure</label>
+      <label for="improve">What would you like to improved? (check all that apply)</label>
+      <label><input type="checkbox" name="improve" value="front-end-projects"> Front-end Projects</label>
+      <label><input type="checkbox" name="improve" value="backend-end-projects"> Back-end Projects</label>
+
+      <label for="comments">Any comments and suggestions?</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
+      <button type="submit" id="submit">Submit</botton>
+    </form>
+  </body>
+</html>
